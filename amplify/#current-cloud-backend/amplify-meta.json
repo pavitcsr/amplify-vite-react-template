@@ -11,5 +11,65 @@
       "StackId": "arn:aws:cloudformation:ap-southeast-1:654654362402:stack/amplify-amplifyvitereacttemp-dev-1e56b/d36baf00-b91b-11ef-925a-069127b0b403",
       "AmplifyAppId": "d24bjoafgt3lzf"
     }
+  },
+  "auth": {
+    "amplifyvitereacttempcee1ec8c": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvitereacttemp-dev-1e56b-deployment/amplify-cfn-templates/auth/amplifyvitereacttempcee1ec8c-cloudformation-template.json",
+        "logicalId": "authamplifyvitereacttempcee1ec8c"
+      },
+      "lastPushTimeStamp": "2024-12-13T07:43:07.634Z",
+      "output": {
+        "UserPoolId": "ap-southeast-1_HGBG4WdCV",
+        "AppClientIDWeb": "7rjerfomtk93bjvmfftoot9f1d",
+        "AppClientID": "7b26er691bi85lv7npb5psom0a",
+        "IdentityPoolId": "ap-southeast-1:ae9069ee-c739-4fcd-a05b-9297cd959669",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-1:654654362402:userpool/ap-southeast-1_HGBG4WdCV",
+        "IdentityPoolName": "amplifyvitereacttempcee1ec8c_identitypool_cee1ec8c__dev",
+        "UserPoolName": "amplifyvitereacttempcee1ec8c_userpool_cee1ec8c"
+      },
+      "lastPushDirHash": "4j4Mhge5g0BN0lqZTRb0ltwQkoo="
+    }
+  },
+  "storage": {
+    "userFiles": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-12-13T07:43:07.634Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyvitereacttemp-dev-1e56b-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageuserFiles"
+      },
+      "output": {
+        "BucketName": "nb-private-storage1e56b-dev",
+        "Region": "ap-southeast-1"
+      },
+      "lastPushDirHash": "FbDs7wV9xqJ/mArgyuN1rdTexak="
+    }
   }
 }

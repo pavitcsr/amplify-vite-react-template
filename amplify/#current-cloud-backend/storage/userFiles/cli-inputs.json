@@ -1,0 +1,14 @@
+{
+  "resourceName": "userFiles",
+  "policyUUID": "65655899",
+  "bucketName": "nb-private-storage",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
